@@ -87,7 +87,7 @@ A complete, production-ready website for **Fingertip Plus** - a premier Salesfor
 
 ```
 /
-├── index.html              # Main homepage
+├── index.php               # Main homepage (with PHP for CSRF tokens)
 ├── blog.php                # Blog listing page
 ├── blog-post.php          # Individual blog post view
 ├── contact-handler.php    # Contact form handler
@@ -152,7 +152,7 @@ Edit `css/style.css` and update the CSS variables:
 
 ### Add/Remove Services
 
-Edit the Services section in `index.html` - each service is a `.service-card` div.
+Edit the Services section in `index.php` - each service is a `.service-card` div.
 
 ### Change Industry Images
 
@@ -253,9 +253,9 @@ Use the image button in the TinyMCE editor to upload and insert images directly 
 
 ### Updating Content
 
-- **Homepage**: Edit `index.html`
+- **Homepage**: Edit `index.php`
 - **Blog Posts**: Use Admin Panel
-- **Contact Info**: Edit `index.html` and footer
+- **Contact Info**: Edit `index.php` and footer
 
 ### Database Backups
 

@@ -25,6 +25,9 @@
     Deny from all
 </FilesMatch>
 
+# Set default directory index
+DirectoryIndex index.php index.html
+
 # Disable directory browsing
 Options -Indexes
 

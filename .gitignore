@@ -1,0 +1,29 @@
+# Uploads directory (user-uploaded images)
+uploads/*
+!uploads/.htaccess
+
+# Setup file (should be deleted after installation)
+setup.php
+
+# Environment-specific config (in production)
+# config.php
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
