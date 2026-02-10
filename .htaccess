@@ -19,11 +19,29 @@
     RewriteRule ^blog/([a-z0-9-]+)/?$ blog-post.php?slug=$1 [L,QSA]
 </IfModule>
 
-# Prevent access to sensitive files
-<FilesMatch "^(config|setup)\.php$">
-    Order allow,deny
-    Deny from all
+# Prevent direct access to sensitive files (but allow PHP includes)
+<FilesMatch "^setup\.php$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
 </FilesMatch>
+
+# Protect config file from direct browser access only
+<Files "config.php">
+    <IfModule mod_authz_core.c>
+        <RequireAll>
+            Require all denied
+        </RequireAll>
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
 
 # Set default directory index
 DirectoryIndex index.php index.html

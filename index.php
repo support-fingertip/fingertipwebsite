@@ -563,7 +563,7 @@ if (empty($_SESSION['csrf_token'])) {
             </div>
             <div class="contact-wrapper">
                 <div class="contact-form-container slide-up">
-                    <form class="contact-form" method="POST" action="/contact-handler.php">
+                    <form class="contact-form" method="POST" action="contact-handler.php">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -583,7 +583,7 @@ if (empty($_SESSION['csrf_token'])) {
                         </div>
                         <div class="form-group">
                             <label for="service">Service Interested In *</label>
-                            <select id="service" name="service" required>
+                            <select id="service_interest" name="service_interest" required>
                                 <option value="">Select a service</option>
                                 <option value="salesforce-implementation">Salesforce Implementation</option>
                                 <option value="consulting">Consulting</option>

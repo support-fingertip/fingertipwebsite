@@ -233,7 +233,7 @@ function initContactForm() {
         try {
             const formData = new FormData(form);
             
-            const response = await fetch('/contact-handler.php', {
+            const response = await fetch('contact-handler.php', {
                 method: 'POST',
                 body: formData
             });
@@ -263,7 +263,7 @@ function initBlogPreview() {
     const blogGrid = document.querySelector('.blog-preview-grid');
     if (!blogGrid) return;
     
-    fetch('/blog-api.php?limit=3')
+    fetch('blog-api.php?limit=3')
         .then(response => response.json())
         .then(data => {
             if (data.success && data.posts.length > 0) {
@@ -348,23 +348,4 @@ function initTypingEffect() {
     
     // Start typing effect
     setTimeout(type, 1000);
-}
-
-// Utility function for form validation
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-// Utility function for throttling scroll events
-function throttle(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
 }

@@ -74,7 +74,13 @@ A complete, production-ready website for **Fingertip Plus** - a premier Salesfor
 2. Login with default credentials:
    - Username: `admin`
    - Password: `fingertip@2024`
-3. **IMPORTANT:** Change your password immediately after first login
+3. **CRITICAL SECURITY STEP:** Change your password immediately after first login!
+   
+   To change the admin password:
+   - Edit `config.php`
+   - Replace the `ADMIN_PASSWORD_HASH` value with a new hash
+   - Generate a new hash by running: `php -r "echo password_hash('your_new_password', PASSWORD_DEFAULT);"`
+   - Or use an online bcrypt generator
 
 ### Step 6: Final Configuration
 
@@ -237,6 +243,11 @@ The website is fully responsive with breakpoints at:
 4. Upload featured image
 5. Set status (Draft or Published)
 6. Click "Create Post"
+
+**Note**: TinyMCE is loaded from CDN with a test API key. For production use, consider:
+- Getting a free API key from https://www.tiny.cloud/
+- Or using a self-hosted version of TinyMCE
+- Update the TinyMCE script URL in `admin/blog-create.php` and `admin/blog-edit.php`
 
 ### Editing Posts
 
