@@ -44,7 +44,7 @@
 </Files>
 
 # Set default directory index
-DirectoryIndex index.php index.html
+DirectoryIndex index.html index.php
 
 # Disable directory browsing
 Options -Indexes
