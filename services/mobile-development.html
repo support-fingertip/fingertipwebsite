@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Development - Fingertip</title>
+    <meta name="description" content="Fingertip builds high-performance native iOS, Android, and cross-platform mobile applications using Flutter, React Native, Swift, and Kotlin for enterprise, consumer, and fintech use cases.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-col">
+                                <h4 class="mega-heading">Salesforce</h4>
+                                <ul>
+                                    <li><a href="salesforce.html">Overview</a></li>
+                                    <li><a href="salesforce-implementation.html">Implementation</a></li>
+                                    <li><a href="salesforce-support.html">Support</a></li>
+                                    <li><a href="salesforce-consulting.html">Consulting</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4 class="mega-heading">Web & Mobile</h4>
+                                <ul>
+                                    <li><a href="web-mobile.html">Overview</a></li>
+                                    <li><a href="web-development.html">Web Development</a></li>
+                                    <li><a href="mobile-development.html">Mobile Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4 class="mega-heading">AI & ML</h4>
+                                <ul>
+                                    <li><a href="ai-ml.html">AI & ML Solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../industries.html" class="nav-link">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="hero" style="min-height: 400px; padding: 160px 0 80px;">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="container" style="position: relative; z-index: 1; text-align: center;">
+            <div class="hero-badge" data-animate="fade-up" style="justify-content: center; margin: 0 auto 24px;">
+                <span class="badge-dot"></span>
+                Native & Cross-Platform
+            </div>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100" style="font-size: clamp(36px, 5vw, 56px);">Mobile App Development</h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200" style="margin: 0 auto;">
+                <a href="../index.html" style="color: rgba(255,255,255,0.6);">Home</a>
+                <span style="color: rgba(255,255,255,0.4); margin: 0 8px;">/</span>
+                <span style="color: rgba(255,255,255,0.6);">Services</span>
+                <span style="color: rgba(255,255,255,0.4); margin: 0 8px;">/</span>
+                <a href="web-mobile.html" style="color: rgba(255,255,255,0.6);">Web & Mobile</a>
+                <span style="color: rgba(255,255,255,0.4); margin: 0 8px;">/</span>
+                <span style="color: var(--blue);">Mobile Development</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== INTRO SECTION ========== -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" data-animate="fade-up">
+                <span class="section-tag">Mobile Excellence</span>
+                <h2 class="section-title">Build Mobile Apps <span class="gradient-text">Users Love</span></h2>
+                <p style="font-size: 17px; line-height: 1.8; color: var(--gray-600); margin-bottom: 24px;">
+                    Mobile is where your customers live. Fingertip builds high-performance, beautifully designed mobile applications for iOS, Android, and cross-platform environments. Whether you need a consumer-facing app, an enterprise mobility solution, or a fintech platform, our mobile engineering team delivers apps that users love and businesses depend on.
+                </p>
+                <p style="font-size: 17px; line-height: 1.8; color: var(--gray-600);">
+                    We combine deep platform expertise with modern development practices including automated testing, CI/CD, and performance monitoring to ship quality apps faster and maintain them with confidence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PLATFORM CARDS ========== -->
+    <section style="padding: 100px 0; background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Platforms</span>
+                <h2 class="section-title">Choose Your <span class="gradient-text">Platform</span></h2>
+                <p class="section-subtitle">We build for every major mobile platform with the right technology for your use case.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+                <!-- iOS Native -->
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-icon-wrapper" style="--accent: #1A7AF8">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>iOS Native</h3>
+                    <p>Leverage the full power of Apple's ecosystem with native iOS apps built in Swift and SwiftUI. We deliver pixel-perfect interfaces, smooth animations, and deep integrations with iOS features including HealthKit, ARKit, Core ML, widgets, and Apple Watch companions.</p>
+                    <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Swift & SwiftUI
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            App Store optimization
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Apple ecosystem integrations
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Android Native -->
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon-wrapper" style="--accent: #00C9A7">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Android Native</h3>
+                    <p>Build for the world's largest mobile platform with Kotlin and Jetpack Compose. Our Android developers create material-design apps that work flawlessly across the diverse Android device landscape, from phones and tablets to foldables and wearables.</p>
+                    <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Kotlin & Jetpack Compose
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Material Design 3
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Multi-device support
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cross-Platform -->
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon-wrapper" style="--accent: #9B59B6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Reach iOS and Android users with a single codebase using Flutter or React Native. Cross-platform development reduces time-to-market and maintenance costs while delivering near-native performance and beautiful, platform-adaptive UIs.</p>
+                    <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Flutter & React Native
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Single codebase, dual platform
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gray-500);">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Faster time-to-market
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURE SECTION ========== -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Mobile Solutions for <span class="gradient-text">Every Industry</span></h2>
+                <p class="section-subtitle">We have deep experience building mobile applications across diverse verticals and use cases.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+                <!-- Enterprise Mobility -->
+                <div data-animate="fade-up" data-delay="0" style="padding: 40px 32px; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); transition: var(--transition);">
+                    <div style="width: 56px; height: 56px; border-radius: var(--radius-md); background: rgba(26,122,248,0.1); color: var(--blue); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 style="font-family: var(--font-primary); font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px;">Enterprise Mobility</h3>
+                    <p style="font-size: 15px; line-height: 1.7; color: var(--gray-600);">Empower your workforce with secure, feature-rich enterprise mobile apps. We build field service tools, inventory management systems, employee portals, and collaboration platforms that integrate with your existing enterprise systems and MDM solutions.</p>
+                </div>
+
+                <!-- Consumer Apps -->
+                <div data-animate="fade-up" data-delay="100" style="padding: 40px 32px; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); transition: var(--transition);">
+                    <div style="width: 56px; height: 56px; border-radius: var(--radius-md); background: rgba(28,181,172,0.1); color: var(--teal); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 style="font-family: var(--font-primary); font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px;">Consumer Apps</h3>
+                    <p style="font-size: 15px; line-height: 1.7; color: var(--gray-600);">Create engaging consumer experiences that drive downloads, retention, and revenue. From social platforms and on-demand services to health and fitness apps, we build products designed for scale with push notifications, in-app purchases, and analytics baked in.</p>
+                </div>
+
+                <!-- Fintech -->
+                <div data-animate="fade-up" data-delay="200" style="padding: 40px 32px; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); transition: var(--transition);">
+                    <div style="width: 56px; height: 56px; border-radius: var(--radius-md); background: rgba(155,89,182,0.1); color: #9B59B6; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 style="font-family: var(--font-primary); font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px;">Fintech & Banking</h3>
+                    <p style="font-size: 15px; line-height: 1.7; color: var(--gray-600);">Build secure, compliant financial applications with bank-grade encryption, biometric authentication, real-time transaction processing, and regulatory compliance (PCI-DSS, SOC 2). We specialize in digital wallets, payment platforms, and neobanking solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS TIMELINE ========== -->
+    <section style="padding: 100px 0; background: var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Our Approach</span>
+                <h2 class="section-title">Mobile Development <span class="gradient-text">Process</span></h2>
+                <p class="section-subtitle">A proven, iterative process that delivers quality mobile apps on time and within budget.</p>
+            </div>
+            <div data-animate="fade-up" data-delay="100">
+                <div class="process-timeline">
+                    <div class="process-line"></div>
+                    <div class="process-step">
+                        <div class="process-dot"><span>1</span></div>
+                        <div class="process-content">
+                            <h4>Strategy & Research</h4>
+                            <p>We analyze your target audience, competitors, and market opportunity. User research, persona development, and feature prioritization ensure we build the right product for the right users.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-dot"><span>2</span></div>
+                        <div class="process-content">
+                            <h4>UX/UI Design</h4>
+                            <p>Platform-specific design that follows iOS Human Interface Guidelines and Android Material Design principles. Interactive prototypes let you experience the app before a single line of code is written.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-dot"><span>3</span></div>
+                        <div class="process-content">
+                            <h4>Development & Integration</h4>
+                            <p>Sprint-based development with continuous integration, automated testing, and daily builds. We integrate with your back-end APIs, third-party services, and enterprise systems throughout development.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-dot"><span>4</span></div>
+                        <div class="process-content">
+                            <h4>Testing & QA</h4>
+                            <p>Rigorous testing across real devices including functional testing, performance profiling, memory leak detection, accessibility audits, and beta testing with real users via TestFlight and Google Play Console.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-dot"><span>5</span></div>
+                        <div class="process-content">
+                            <h4>Launch & Store Submission</h4>
+                            <p>We handle App Store and Google Play submission, including metadata optimization, screenshots, app previews, and compliance with store guidelines. Our team manages the review process end-to-end.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-dot"><span>6</span></div>
+                        <div class="process-content">
+                            <h4>Growth & Iteration</h4>
+                            <p>Post-launch analytics, crash monitoring, user feedback analysis, and iterative feature releases keep your app improving. We help you grow downloads and retention through data-driven optimizations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIDEO SECTION ========== -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Mobile <span class="gradient-text">Success Stories</span></h2>
+                <p class="section-subtitle">See how Fingertip has delivered mobile apps that users love and businesses depend on.</p>
+            </div>
+            <div class="video-grid" data-animate="fade-up" data-delay="100">
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Mobile App Development Case Study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h4>Fintech App: 500K Users in 6 Months</h4>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Enterprise Mobile App Case Study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h4>Enterprise Field Service App</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80" alt="Office" class="cta-bg-image">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Get <span class="gradient-text-light">Started?</span></h2>
+            <p>Let's discuss how Fingertip can help with your project.</p>
+            <div class="cta-actions">
+                <a href="../contact.html" class="btn btn-white btn-lg"><span>Contact Us</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+                    <p class="footer-description">Beyond Solutions — Your trusted technology partner.</p>
+                </div>
+                <div class="footer-links-col"><h4>Services</h4><ul><li><a href="salesforce.html">Salesforce</a></li><li><a href="web-mobile.html">Web & Mobile</a></li><li><a href="ai-ml.html">AI & ML</a></li></ul></div>
+                <div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+                <div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
