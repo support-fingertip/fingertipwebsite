@@ -20,6 +20,12 @@
         initParticles();
         initTypingEffect();
         initVideoLazyLoad();
+
+        // Add js-ready class after a small delay to prevent FOUC
+        // Elements with [data-animate] are only hidden after this class is added
+        requestAnimationFrame(function () {
+            document.body.classList.add('js-ready');
+        });
     }
 
     /* ==========================================================
@@ -533,7 +539,7 @@
                 size: Math.random() * 2 + 0.5,       // 0.5 to 2.5px
                 speedX: (Math.random() - 0.5) * 0.8,
                 speedY: (Math.random() - 0.5) * 0.8,
-                opacity: Math.random() * 0.5 + 0.1
+                opacity: Math.random() * 0.5 + 0.2
             };
         }
 
@@ -582,7 +588,7 @@
                     var distance = Math.sqrt(dx * dx + dy * dy);
 
                     if (distance < 150) {
-                        var lineOpacity = 0.08 * (1 - distance / 150);
+                        var lineOpacity = 0.12 * (1 - distance / 150);
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
