@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Solutions - Fingertip | Beyond Solutions</title>
+    <meta name="description" content="Fingertip delivers Salesforce Education Cloud, e-learning platforms, and AI-powered tools for universities, schools, and EdTech companies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .industry-hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0}
+        .industry-hero img{width:100%;height:400px;object-fit:cover;border-radius:16px}
+        .challenges-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+        .challenge-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0}
+        .challenge-card h4{font-size:18px;font-weight:700;color:#0C2340;margin-bottom:8px}
+        .challenge-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+        .solution-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0;text-align:center;transition:transform 0.3s,box-shadow 0.3s}
+        .solution-card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,0.1)}
+        .solution-card .sol-icon{width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff}
+        .solution-card h4{font-family:var(--font-primary);font-size:20px;font-weight:700;color:#0C2340;margin-bottom:10px}
+        .solution-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solution-card ul{text-align:left;margin-top:16px}
+        .solution-card ul li{font-size:13px;color:#475569;padding:6px 0;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:8px}
+        .solution-card ul li svg{color:#00C9A7;flex-shrink:0}
+        @media(max-width:992px){.industry-hero{grid-template-columns:1fr}.solutions-grid{grid-template-columns:1fr}.challenges-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu"><div class="mega-menu-inner">
+                        <div class="mega-col"><h4 class="mega-heading">Salesforce</h4><ul><li><a href="../services/salesforce.html">Overview</a></li><li><a href="../services/salesforce-implementation.html">Implementation</a></li><li><a href="../services/salesforce-support.html">Support</a></li><li><a href="../services/salesforce-consulting.html">Consulting</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">Web & Mobile</h4><ul><li><a href="../services/web-mobile.html">Overview</a></li><li><a href="../services/web-development.html">Web Apps</a></li><li><a href="../services/mobile-development.html">Mobile</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">AI & ML</h4><ul><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div>
+                    </div></div>
+                </div>
+                <a href="../solutions.html" class="nav-link">Solutions</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="../industries.html" class="nav-link active">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <a href="../industries.html">Industries</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Education</span>
+            </div>
+            <h1>Education <span class="gradient-text-light">Solutions</span></h1>
+            <p>Technology for universities, K-12 schools, and EdTech companies transforming how people learn.</p>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="industry-hero" data-animate="fade-up">
+                <div><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=700&q=80" alt="Education Technology" loading="lazy"></div>
+                <div>
+                    <span class="section-tag">Industry Focus</span>
+                    <h2 class="section-title">Transforming <span class="gradient-text">Education</span></h2>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);margin-bottom:24px;">Education institutions and EdTech companies are reimagining how learning is delivered, managed, and measured. From student enrollment and engagement through alumni relations, technology plays a critical role at every stage of the education lifecycle. Fingertip helps institutions and EdTech innovators build platforms that enhance learning outcomes and operational efficiency.</p>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);">Our expertise includes Salesforce Education Cloud implementations, custom e-learning platforms, virtual classrooms, and AI-powered adaptive learning systems that personalize the educational experience for every learner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Pain Points</span><h2 class="section-title">Industry <span class="gradient-text">Challenges</span></h2><p class="section-subtitle">Education organizations face evolving challenges in the digital-first learning era.</p></div>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-animate="fade-up" data-delay="0"><h4>Student Enrollment & Retention</h4><p>Attracting and retaining students in a competitive landscape requires personalized outreach, streamlined admissions, and proactive retention strategies.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="100"><h4>Digital Learning Delivery</h4><p>Students expect flexible, engaging online experiences. Institutions must deliver hybrid and fully remote learning that matches in-person quality.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="200"><h4>Student Success Tracking</h4><p>Identifying at-risk students early and intervening with support requires data-driven insights that traditional systems fail to provide at scale.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="300"><h4>Administrative Overhead</h4><p>Manual processes for scheduling, grading, financial aid, and reporting consume staff time that could be focused on student support and teaching.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="400"><h4>Alumni & Donor Engagement</h4><p>Building lasting alumni relationships and driving fundraising campaigns requires sophisticated CRM and engagement tools beyond basic email.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="500"><h4>Data Privacy & Accessibility</h4><p>FERPA compliance, data security, and ADA accessibility requirements add complexity to every technology initiative in education.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">How We Help</span><h2 class="section-title">Our <span class="gradient-text">Solutions</span></h2><p class="section-subtitle">Comprehensive education technology solutions that improve outcomes for students, staff, and institutions.</p></div>
+            <div class="solutions-grid">
+                <div class="solution-card" data-animate="fade-up" data-delay="0">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#1A7AF8,#1459C5);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h4>Salesforce Education Cloud</h4>
+                    <p>Student lifecycle management from recruitment through alumni engagement.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Enrollment Management</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Student Success Hub</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Alumni Relationship CRM</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Fundraising Campaigns</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="100">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#00C9A7,#00A88A);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="2"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>E-Learning Platforms</h4>
+                    <p>Custom web and mobile learning platforms with engaging content delivery and collaboration tools.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Virtual Classrooms</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>LMS Integration</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Student Mobile Apps</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Assessment & Grading Tools</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="200">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#7C4DFF,#5E35B1);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>AI Adaptive Learning</h4>
+                    <p>Machine learning that personalizes learning paths and identifies students needing support.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Personalized Learning Paths</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>At-Risk Student Detection</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Automated Tutoring</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Learning Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Results</span><h2 class="section-title">Proven <span class="gradient-text">Impact</span></h2></div>
+            <div class="stats-row" data-animate="fade-up" data-delay="100">
+                <div class="stat-card"><div class="stat-number" data-count="32">0</div><span class="stat-suffix">%</span><div class="stat-label">Increase in student enrollment</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="25">0</div><span class="stat-suffix">%</span><div class="stat-label">Improvement in retention rates</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="50">0</div><span class="stat-suffix">%</span><div class="stat-label">Reduction in administrative tasks</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="4">0</div><span class="stat-suffix">x</span><div class="stat-label">Growth in online course completion</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Case Study</span><h2 class="section-title">Education <span class="gradient-text">Success Story</span></h2></div>
+            <div class="video-grid" data-animate="fade-up" data-delay="100">
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="University Digital Transformation" frameborder="0" allowfullscreen></iframe></div><h4>University Enrollment Platform Overhaul</h4></div>
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="EdTech Platform Launch" frameborder="0" allowfullscreen></iframe></div><h4>EdTech Startup Scales to 500K Learners</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-bg"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1400&q=80" alt="Education" class="cta-bg-image" loading="lazy"><div class="cta-overlay"></div></div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Transform <span class="gradient-text-light">Education Delivery?</span></h2>
+            <p>Partner with Fingertip to build technology that empowers educators and inspires learners.</p>
+            <div class="cta-actions"><a href="../contact.html" class="btn btn-white btn-lg"><span>Schedule a Consultation</span></a></div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a><p class="footer-description">Beyond Solutions — Your trusted technology partner.</p></div><div class="footer-links-col"><h4>Services</h4><ul><li><a href="../services/salesforce.html">Salesforce</a></li><li><a href="../services/web-mobile.html">Web & Mobile</a></li><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div><div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div><div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div></div></footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

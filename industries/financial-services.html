@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services Solutions - Fingertip | Beyond Solutions</title>
+    <meta name="description" content="Fingertip delivers Salesforce, Web/Mobile, and AI/ML solutions for banking, insurance, fintech, and wealth management with regulatory compliance built in.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .industry-hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0}
+        .industry-hero img{width:100%;height:400px;object-fit:cover;border-radius:16px}
+        .challenges-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+        .challenge-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0}
+        .challenge-card h4{font-size:18px;font-weight:700;color:#0C2340;margin-bottom:8px}
+        .challenge-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+        .solution-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0;text-align:center;transition:transform 0.3s,box-shadow 0.3s}
+        .solution-card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,0.1)}
+        .solution-card .sol-icon{width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff}
+        .solution-card h4{font-family:var(--font-primary);font-size:20px;font-weight:700;color:#0C2340;margin-bottom:10px}
+        .solution-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solution-card ul{text-align:left;margin-top:16px}
+        .solution-card ul li{font-size:13px;color:#475569;padding:6px 0;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:8px}
+        .solution-card ul li svg{color:#00C9A7;flex-shrink:0}
+        @media(max-width:992px){.industry-hero{grid-template-columns:1fr}.solutions-grid{grid-template-columns:1fr}.challenges-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu"><div class="mega-menu-inner">
+                        <div class="mega-col"><h4 class="mega-heading">Salesforce</h4><ul><li><a href="../services/salesforce.html">Overview</a></li><li><a href="../services/salesforce-implementation.html">Implementation</a></li><li><a href="../services/salesforce-support.html">Support</a></li><li><a href="../services/salesforce-consulting.html">Consulting</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">Web & Mobile</h4><ul><li><a href="../services/web-mobile.html">Overview</a></li><li><a href="../services/web-development.html">Web Apps</a></li><li><a href="../services/mobile-development.html">Mobile</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">AI & ML</h4><ul><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div>
+                    </div></div>
+                </div>
+                <a href="../solutions.html" class="nav-link">Solutions</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="../industries.html" class="nav-link active">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <a href="../industries.html">Industries</a>
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Financial Services</span>
+            </div>
+            <h1>Financial <span class="gradient-text-light">Services</span></h1>
+            <p>Technology solutions for banking, insurance, fintech, and wealth management that drive compliance and growth.</p>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="industry-hero" data-animate="fade-up">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80" alt="Financial Services" loading="lazy">
+                </div>
+                <div>
+                    <span class="section-tag">Industry Focus</span>
+                    <h2 class="section-title">Empowering <span class="gradient-text">Financial Institutions</span></h2>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);margin-bottom:24px;">Financial services organizations face unprecedented pressure to modernize legacy systems, meet evolving compliance requirements, and deliver seamless digital experiences. Fingertip partners with banks, insurance companies, fintech startups, and wealth management firms to build technology solutions that accelerate transformation while maintaining the highest security standards.</p>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);">From Salesforce Financial Services Cloud implementations to AI-powered fraud detection and mobile banking platforms, we deliver end-to-end solutions that help financial institutions stay competitive in a rapidly changing landscape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section style="padding:100px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Pain Points</span>
+                <h2 class="section-title">Industry <span class="gradient-text">Challenges</span></h2>
+                <p class="section-subtitle">Financial services companies face unique obstacles that require specialized technology expertise.</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-animate="fade-up" data-delay="0">
+                    <h4>Regulatory Compliance</h4>
+                    <p>Navigating complex regulations like SOX, PCI-DSS, GDPR, and KYC/AML requirements while maintaining operational efficiency across multiple jurisdictions.</p>
+                </div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="100">
+                    <h4>Legacy System Modernization</h4>
+                    <p>Decades-old core banking and insurance platforms create data silos, limit agility, and increase maintenance costs, making digital transformation difficult.</p>
+                </div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="200">
+                    <h4>Fraud Detection & Security</h4>
+                    <p>Rising cyber threats and sophisticated fraud schemes demand real-time detection capabilities and robust security frameworks to protect customer assets.</p>
+                </div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="300">
+                    <h4>Customer Experience</h4>
+                    <p>Customers now expect frictionless digital banking, personalized financial advice, and omnichannel access that rivals leading fintech disruptors.</p>
+                </div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="400">
+                    <h4>Data Fragmentation</h4>
+                    <p>Customer data spread across multiple systems prevents a unified 360-degree view, hindering relationship management and cross-sell opportunities.</p>
+                </div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="500">
+                    <h4>Open Banking & API Economy</h4>
+                    <p>The shift toward open banking mandates secure API ecosystems, third-party integrations, and new partnership models that legacy architectures struggle to support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">How We Help</span>
+                <h2 class="section-title">Our <span class="gradient-text">Solutions</span></h2>
+                <p class="section-subtitle">Fingertip delivers tailored Salesforce, Web/Mobile, and AI solutions purpose-built for financial services.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card" data-animate="fade-up" data-delay="0">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#1A7AF8,#1459C5);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h4>Salesforce for Finance</h4>
+                    <p>Financial Services Cloud implementations that unify client data and streamline operations.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Financial Services Cloud</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Wealth Management CRM</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Compliance Automation</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>KYC/AML Workflows</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="100">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#00C9A7,#00A88A);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h4>Web & Mobile Banking</h4>
+                    <p>Secure, user-centric digital banking and fintech platforms that customers love.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile Banking Apps</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Client Portals</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Payment Processing</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Open Banking APIs</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="200">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#7C4DFF,#5E35B1);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 014 4c0 1.95-2 4-4 6-2-2-4-4.05-4-6a4 4 0 014-4z" stroke="currentColor" stroke-width="2"/><path d="M4.93 10.93a8 8 0 1014.14 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h4>AI-Powered Analytics</h4>
+                    <p>Machine learning models that detect fraud, predict risk, and personalize customer experiences.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Fraud Detection</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Credit Risk Scoring</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Portfolio Analytics</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Regulatory Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS METRICS -->
+    <section style="padding:80px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Results</span>
+                <h2 class="section-title">Proven <span class="gradient-text">Impact</span></h2>
+            </div>
+            <div class="stats-row" data-animate="fade-up" data-delay="100">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="45">0</div><span class="stat-suffix">%</span>
+                    <div class="stat-label">Reduction in compliance processing time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="3">0</div><span class="stat-suffix">x</span>
+                    <div class="stat-label">Faster client onboarding</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="92">0</div><span class="stat-suffix">%</span>
+                    <div class="stat-label">Fraud detection accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="60">0</div><span class="stat-suffix">%</span>
+                    <div class="stat-label">Increase in digital adoption</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Case Study</span>
+                <h2 class="section-title">Financial Services <span class="gradient-text">Success Story</span></h2>
+            </div>
+            <div class="video-grid" data-animate="fade-up" data-delay="100">
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Financial Services Digital Transformation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h4>Regional Bank Digital Transformation</h4>
+                </div>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Insurance Company CRM Implementation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h4>Insurance Company CRM Modernization</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=80" alt="Financial district" class="cta-bg-image" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Transform Your <span class="gradient-text-light">Financial Services?</span></h2>
+            <p>Let Fingertip's experts help you navigate digital transformation with confidence and compliance.</p>
+            <div class="cta-actions">
+                <a href="../contact.html" class="btn btn-white btn-lg"><span>Schedule a Consultation</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a><p class="footer-description">Beyond Solutions — Your trusted technology partner.</p></div>
+                <div class="footer-links-col"><h4>Services</h4><ul><li><a href="../services/salesforce.html">Salesforce</a></li><li><a href="../services/web-mobile.html">Web & Mobile</a></li><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div>
+                <div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+                <div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

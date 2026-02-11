@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Solutions - Fingertip | Beyond Solutions</title>
+    <meta name="description" content="Fingertip delivers Salesforce CRM, web/mobile platforms, and AI analytics for property management, real estate brokerages, and construction firms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .industry-hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0}
+        .industry-hero img{width:100%;height:400px;object-fit:cover;border-radius:16px}
+        .challenges-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+        .challenge-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0}
+        .challenge-card h4{font-size:18px;font-weight:700;color:#0C2340;margin-bottom:8px}
+        .challenge-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+        .solution-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0;text-align:center;transition:transform 0.3s,box-shadow 0.3s}
+        .solution-card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,0.1)}
+        .solution-card .sol-icon{width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff}
+        .solution-card h4{font-family:var(--font-primary);font-size:20px;font-weight:700;color:#0C2340;margin-bottom:10px}
+        .solution-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solution-card ul{text-align:left;margin-top:16px}
+        .solution-card ul li{font-size:13px;color:#475569;padding:6px 0;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:8px}
+        .solution-card ul li svg{color:#00C9A7;flex-shrink:0}
+        @media(max-width:992px){.industry-hero{grid-template-columns:1fr}.solutions-grid{grid-template-columns:1fr}.challenges-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu"><div class="mega-menu-inner">
+                        <div class="mega-col"><h4 class="mega-heading">Salesforce</h4><ul><li><a href="../services/salesforce.html">Overview</a></li><li><a href="../services/salesforce-implementation.html">Implementation</a></li><li><a href="../services/salesforce-support.html">Support</a></li><li><a href="../services/salesforce-consulting.html">Consulting</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">Web & Mobile</h4><ul><li><a href="../services/web-mobile.html">Overview</a></li><li><a href="../services/web-development.html">Web Apps</a></li><li><a href="../services/mobile-development.html">Mobile</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">AI & ML</h4><ul><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div>
+                    </div></div>
+                </div>
+                <a href="../solutions.html" class="nav-link">Solutions</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="../industries.html" class="nav-link active">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <a href="../industries.html">Industries</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Real Estate</span>
+            </div>
+            <h1>Real Estate <span class="gradient-text-light">Solutions</span></h1>
+            <p>Technology for property management, real estate brokerages, and construction companies.</p>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="industry-hero" data-animate="fade-up">
+                <div><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80" alt="Real Estate Technology" loading="lazy"></div>
+                <div>
+                    <span class="section-tag">Industry Focus</span>
+                    <h2 class="section-title">Digitizing <span class="gradient-text">Real Estate</span></h2>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);margin-bottom:24px;">The real estate industry is undergoing a technology revolution. From virtual property tours to AI-driven valuations, digital solutions are transforming how properties are marketed, sold, and managed. Fingertip works with brokerages, property managers, developers, and construction firms to build platforms that streamline operations and enhance client experiences.</p>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);">Our expertise spans Salesforce CRM for lead and deal management, custom property portals and mobile apps, and AI-powered market analytics that give real estate professionals a competitive edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Pain Points</span><h2 class="section-title">Industry <span class="gradient-text">Challenges</span></h2><p class="section-subtitle">Real estate firms face unique technology and operational challenges in a competitive market.</p></div>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-animate="fade-up" data-delay="0"><h4>Lead Management</h4><p>Real estate leads come from dozens of sources -- portals, social media, referrals, open houses. Without a unified CRM, agents lose deals to slow follow-up and poor tracking.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="100"><h4>Property Marketing</h4><p>High-quality listings with virtual tours, professional photography, and targeted digital campaigns are essential but difficult to manage at scale across portfolios.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="200"><h4>Transaction Complexity</h4><p>Real estate transactions involve multiple parties, documents, and compliance steps. Manual processes create delays, errors, and frustrated clients.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="300"><h4>Tenant & Property Management</h4><p>Managing maintenance requests, lease renewals, rent collection, and tenant communication across large portfolios demands efficient digital workflows.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="400"><h4>Market Intelligence</h4><p>Agents and investors need real-time market data, comparable sales analysis, and predictive pricing models to make informed buying and selling decisions.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="500"><h4>Remote Collaboration</h4><p>Distributed teams, remote clients, and multi-location properties require tools for virtual collaboration, digital document signing, and project tracking.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">How We Help</span><h2 class="section-title">Our <span class="gradient-text">Solutions</span></h2><p class="section-subtitle">Purpose-built real estate technology solutions that close deals faster and manage properties smarter.</p></div>
+            <div class="solutions-grid">
+                <div class="solution-card" data-animate="fade-up" data-delay="0">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#1A7AF8,#1459C5);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M2 20h20M5 20V8l7-5 7 5v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>Salesforce for Real Estate</h4>
+                    <p>CRM solutions that track leads, deals, and client relationships through the entire lifecycle.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Lead & Pipeline Management</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Deal Room Automation</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Commission Tracking</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Client Communication</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="100">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#00C9A7,#00A88A);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h4>Property Portals & Apps</h4>
+                    <p>Stunning web and mobile platforms for property listings, virtual tours, and tenant services.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Listing Platforms</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Virtual Tour Apps</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Tenant Portals</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Maintenance Request Systems</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="200">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#7C4DFF,#5E35B1);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>AI Market Analytics</h4>
+                    <p>Intelligent property valuation, market prediction, and investment analysis tools.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Automated Valuations</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Market Trend Prediction</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Investment ROI Models</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Comparable Sales Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Results</span><h2 class="section-title">Proven <span class="gradient-text">Impact</span></h2></div>
+            <div class="stats-row" data-animate="fade-up" data-delay="100">
+                <div class="stat-card"><div class="stat-number" data-count="55">0</div><span class="stat-suffix">%</span><div class="stat-label">Faster lead-to-close cycle</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="40">0</div><span class="stat-suffix">%</span><div class="stat-label">Increase in listing inquiries</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="90">0</div><span class="stat-suffix">%</span><div class="stat-label">Tenant satisfaction score</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="25">0</div><span class="stat-suffix">%</span><div class="stat-label">Reduction in vacancy rates</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Case Study</span><h2 class="section-title">Real Estate <span class="gradient-text">Success Story</span></h2></div>
+            <div class="video-grid" data-animate="fade-up" data-delay="100">
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Real Estate CRM Transformation" frameborder="0" allowfullscreen></iframe></div><h4>Brokerage CRM Digital Transformation</h4></div>
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Property Management Platform" frameborder="0" allowfullscreen></iframe></div><h4>Property Management Portal Launch</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-bg"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=80" alt="Real estate skyline" class="cta-bg-image" loading="lazy"><div class="cta-overlay"></div></div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Digitize Your <span class="gradient-text-light">Real Estate Business?</span></h2>
+            <p>Partner with Fingertip to build platforms that help you close deals and manage properties smarter.</p>
+            <div class="cta-actions"><a href="../contact.html" class="btn btn-white btn-lg"><span>Schedule a Consultation</span></a></div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a><p class="footer-description">Beyond Solutions — Your trusted technology partner.</p></div><div class="footer-links-col"><h4>Services</h4><ul><li><a href="../services/salesforce.html">Salesforce</a></li><li><a href="../services/web-mobile.html">Web & Mobile</a></li><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div><div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div><div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div></div></footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

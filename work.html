@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - Fingertip | Beyond Solutions</title>
+    <meta name="description" content="Explore Fingertip's portfolio of successful projects across Salesforce, Web & Mobile, and AI/ML — delivering measurable business outcomes for clients worldwide.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .work-filter-bar { display:flex; gap:8px; justify-content:center; margin-bottom:48px; flex-wrap:wrap; }
+        .filter-btn { padding:10px 24px; border-radius:9999px; border:1px solid #e2e8f0; background:white; font-size:14px; font-weight:600; color:#475569; cursor:pointer; transition:all 0.3s; }
+        .filter-btn:hover, .filter-btn.active { background:#1A7AF8; color:white; border-color:#1A7AF8; }
+        .work-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+        .work-card { border-radius:16px; overflow:hidden; background:white; border:1px solid #e2e8f0; transition:transform 0.3s, box-shadow 0.3s; }
+        .work-card:hover { transform:translateY(-8px); box-shadow:0 20px 50px rgba(0,0,0,0.12); }
+        .work-card-image { height:240px; overflow:hidden; }
+        .work-card-image img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s; }
+        .work-card:hover .work-card-image img { transform:scale(1.08); }
+        .work-card-body { padding:24px; }
+        .work-card-badge { display:inline-block; padding:4px 12px; border-radius:9999px; font-size:12px; font-weight:600; margin-bottom:12px; }
+        .work-card-badge.salesforce { background:rgba(26,122,248,0.1); color:#1A7AF8; }
+        .work-card-badge.web { background:rgba(0,201,167,0.1); color:#00A88A; }
+        .work-card-badge.mobile { background:rgba(255,107,53,0.1); color:#FF6B35; }
+        .work-card-badge.ai-ml { background:rgba(124,77,255,0.1); color:#7C4DFF; }
+        .work-card h3 { font-size:20px; font-weight:700; margin-bottom:8px; color:#0C2340; }
+        .work-card p { font-size:14px; color:#64748B; line-height:1.6; margin-bottom:16px; }
+        .work-card-client { font-size:13px; color:#94A3B8; }
+        .work-card-link { font-size:14px; font-weight:600; color:#1A7AF8; display:inline-flex; align-items:center; gap:6px; }
+        @media(max-width:992px) { .work-grid { grid-template-columns:repeat(2,1fr); } }
+        @media(max-width:768px) { .work-grid { grid-template-columns:1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Fingertip - Beyond Solutions" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu"><div class="mega-menu-inner">
+                        <div class="mega-col"><h4 class="mega-heading">Salesforce</h4><ul><li><a href="services/salesforce.html">Overview</a></li><li><a href="services/salesforce-implementation.html">Implementation</a></li><li><a href="services/salesforce-support.html">Support</a></li><li><a href="services/salesforce-consulting.html">Consulting</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">Web & Mobile</h4><ul><li><a href="services/web-mobile.html">Overview</a></li><li><a href="services/web-development.html">Web Apps</a></li><li><a href="services/mobile-development.html">Mobile</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">AI & ML</h4><ul><li><a href="services/ai-ml.html">AI & ML Solutions</a></li></ul></div>
+                    </div></div>
+                </div>
+                <a href="solutions.html" class="nav-link">Solutions</a>
+                <a href="work.html" class="nav-link active">Work</a>
+                <a href="industries.html" class="nav-link">Industries</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg><span>Work</span></div>
+            <h1>Our <span class="gradient-text-light">Work</span></h1>
+            <p>Real projects. Real results. Explore how we have helped businesses transform with Salesforce, Web, Mobile, and AI solutions.</p>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO GRID ========== -->
+    <section style="padding:100px 0">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projects That Drive <span class="gradient-text">Business Impact</span></h2>
+                <p class="section-subtitle">From CRM transformation to AI-powered intelligence, every project is built to deliver measurable outcomes.</p>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="work-filter-bar" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="salesforce">Salesforce</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="work-grid">
+
+                <!-- Project 1: Cloud CRM Transformation -->
+                <div class="work-card" data-category="salesforce" data-animate="fade-up" data-delay="0">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Cloud CRM Transformation" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge salesforce">Salesforce</span>
+                        <h3>Cloud CRM Transformation</h3>
+                        <p>End-to-end Salesforce Sales Cloud and Service Cloud implementation for a global retail chain with 500+ stores across 12 countries.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">RetailGlobe Inc.</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-Commerce Platform Redesign -->
+                <div class="work-card" data-category="web" data-animate="fade-up" data-delay="100">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="E-Commerce Platform Redesign" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge web">Web</span>
+                        <h3>E-Commerce Platform Redesign</h3>
+                        <p>Complete redesign and rebuild of a high-traffic e-commerce platform using React and Node.js, boosting conversions by 65%.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">Velour Fashion</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Field Service Mobile App -->
+                <div class="work-card" data-category="mobile" data-animate="fade-up" data-delay="200">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Field Service Mobile App" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge mobile">Mobile</span>
+                        <h3>Field Service Mobile App</h3>
+                        <p>Native iOS and Android app for field technicians with offline capabilities, GPS routing, and real-time work order management.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">PowerGrid Utilities</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Predictive Analytics Dashboard -->
+                <div class="work-card" data-category="ai-ml" data-animate="fade-up" data-delay="0">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Predictive Analytics Dashboard" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge ai-ml">AI/ML</span>
+                        <h3>Predictive Analytics Dashboard</h3>
+                        <p>Machine learning-powered dashboard for real-time risk assessment and market trend prediction with 94% forecast accuracy.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">Meridian Capital Group</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Sales Cloud Implementation -->
+                <div class="work-card" data-category="salesforce" data-animate="fade-up" data-delay="100">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Sales Cloud Implementation" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge salesforce">Salesforce</span>
+                        <h3>Sales Cloud Implementation</h3>
+                        <p>Rapid Salesforce Sales Cloud deployment for a fast-growing SaaS startup, including lead scoring, pipeline automation, and CPQ setup.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">CloudStack SaaS</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Healthcare Patient Portal -->
+                <div class="work-card" data-category="web" data-animate="fade-up" data-delay="200">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Healthcare Patient Portal" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge web">Web</span>
+                        <h3>Healthcare Patient Portal</h3>
+                        <p>HIPAA-compliant patient portal with appointment scheduling, telehealth integration, and secure medical records access.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">NorthStar Health Network</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Inventory Management App -->
+                <div class="work-card" data-category="mobile" data-animate="fade-up" data-delay="0">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Inventory Management App" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge mobile">Mobile</span>
+                        <h3>Inventory Management App</h3>
+                        <p>Cross-platform mobile app with barcode scanning, real-time stock tracking, and automated reorder alerts for warehouse operations.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">SwiftLog Logistics</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Customer Churn Predictor -->
+                <div class="work-card" data-category="ai-ml" data-animate="fade-up" data-delay="100">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80" alt="Customer Churn Predictor" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge ai-ml">AI/ML</span>
+                        <h3>Customer Churn Predictor</h3>
+                        <p>AI-driven churn prediction model that identifies at-risk subscribers and triggers automated retention campaigns, reducing churn by 35%.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">ConnectTel Communications</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Service Cloud Integration -->
+                <div class="work-card" data-category="salesforce" data-animate="fade-up" data-delay="200">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80" alt="Service Cloud Integration" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge salesforce">Salesforce</span>
+                        <h3>Service Cloud Integration</h3>
+                        <p>Omnichannel Service Cloud implementation with CTI integration, knowledge base, and AI-powered case routing for an insurance provider.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">Guardian Insurance Co.</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10: Real Estate Marketplace -->
+                <div class="work-card" data-category="web" data-animate="fade-up" data-delay="0">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Real Estate Marketplace" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge web">Web</span>
+                        <h3>Real Estate Marketplace</h3>
+                        <p>Full-stack property marketplace with advanced search, virtual tours, mortgage calculators, and agent-client communication tools.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">PrimeNest Properties</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 11: Fleet Tracking App -->
+                <div class="work-card" data-category="mobile" data-animate="fade-up" data-delay="100">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=600&q=80" alt="Fleet Tracking App" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge mobile">Mobile</span>
+                        <h3>Fleet Tracking App</h3>
+                        <p>Real-time GPS fleet tracking app with route optimization, driver behavior analytics, fuel monitoring, and dispatch management.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">TransRoute Logistics</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 12: NLP Document Processor -->
+                <div class="work-card" data-category="ai-ml" data-animate="fade-up" data-delay="200">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" alt="NLP Document Processor" loading="lazy">
+                    </div>
+                    <div class="work-card-body">
+                        <span class="work-card-badge ai-ml">AI/ML</span>
+                        <h3>NLP Document Processor</h3>
+                        <p>Natural language processing system that automatically extracts, classifies, and summarizes legal documents, reducing review time by 80%.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span class="work-card-client">LexiTech Legal Solutions</span>
+                            <a href="work/project-detail.html" class="work-card-link">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80" alt="Modern office" class="cta-bg-image" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Have a Project in <span class="gradient-text-light">Mind?</span></h2>
+            <p>Let's discuss how Fingertip can bring your vision to life with the right technology.</p>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn btn-white btn-lg">
+                    <span>Start Your Project</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        <img src="images/logo.png" alt="Fingertip" class="logo-img">
+                    </a>
+                    <p class="footer-description">Beyond Solutions — Your trusted technology partner delivering Salesforce, Web & Mobile, and AI solutions that drive real business growth.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/salesforce.html">Salesforce Development</a></li>
+                        <li><a href="services/salesforce-implementation.html">Salesforce Implementation</a></li>
+                        <li><a href="services/salesforce-consulting.html">Salesforce Consulting</a></li>
+                        <li><a href="services/web-mobile.html">Web & Mobile Development</a></li>
+                        <li><a href="services/ai-ml.html">AI & Machine Learning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="work.html">Our Work</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter / X</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fingertip. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(function(btn){
+            btn.addEventListener('click',function(){
+                document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active')});
+                btn.classList.add('active');
+                var filter = btn.dataset.filter;
+                document.querySelectorAll('.work-card').forEach(function(card){
+                    if(filter==='all' || card.dataset.category===filter){
+                        card.style.display='';
+                    } else {
+                        card.style.display='none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Enterprise CRM Transformation for FinServ Global",
+        "client": "FinServ Global",
+        "category": "Salesforce",
+        "project_image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
+        "short_description": "Complete Salesforce implementation and data migration for a multinational financial services firm, consolidating 5 legacy CRM systems into a unified Sales Cloud and Service Cloud platform.",
+        "detailed_description": "FinServ Global, a multinational financial services company with operations in 12 countries, approached Fingertip to modernize their customer relationship management. They were operating with five disconnected legacy CRM systems that created data silos, duplicated records, and inconsistent customer experiences across regions.\n\nOur team designed and implemented a comprehensive Salesforce solution that unified their entire customer lifecycle -- from lead generation through service and support -- into a single, scalable platform.\n\nThe project included custom Lightning components for their unique compliance workflows, integration with their existing ERP system via MuleSoft, and a data migration strategy that cleaned and consolidated over 2.4 million customer records.",
+        "technologies": ["Salesforce Sales Cloud", "Salesforce Service Cloud", "MuleSoft", "Lightning Web Components", "Apex", "SOQL", "Heroku"],
+        "timeline": "8 months",
+        "challenge": "The primary challenge was consolidating five disparate CRM systems with inconsistent data formats, duplicate records, and varying levels of data quality. Additionally, the client required zero downtime during migration, as their customer service operations run 24/7 across multiple time zones. Compliance requirements across 12 different jurisdictions added another layer of complexity to the data handling and workflow design.",
+        "solution": "We developed a phased migration strategy that ran parallel systems during transition, ensuring zero downtime. A custom data cleansing engine was built to deduplicate and standardize 2.4 million records before migration. We created region-specific compliance workflows using Salesforce Flow and Apex triggers, with a centralized governance dashboard for the compliance team. MuleSoft integration ensured real-time data sync between Salesforce and their existing ERP.",
+        "results": "- 40% reduction in average customer response time\n- 99.8% data accuracy after migration (up from 72%)\n- $2.1M annual savings from system consolidation\n- 60% improvement in cross-selling through unified customer view\n- 100% compliance audit pass rate in the first year",
+        "created_at": "2026-01-20T09:00:00Z",
+        "updated_at": "2026-01-25T14:00:00Z"
+    },
+    {
+        "id": 2,
+        "title": "AI-Powered Inventory Management Platform",
+        "client": "RetailMax India",
+        "category": "AI/ML",
+        "project_image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800",
+        "short_description": "Custom machine learning platform that predicts inventory demand across 200+ retail locations, reducing overstock by 34% and stockouts by 51%.",
+        "detailed_description": "RetailMax India, one of the country's fastest-growing retail chains with over 200 locations, was struggling with inventory management. Traditional forecasting methods could not account for regional demand variations, seasonal patterns, and the rapid expansion of their product catalog.\n\nFingertip built a custom AI-powered inventory management platform that uses machine learning to predict demand at the SKU level for each individual store location. The system ingests historical sales data, weather patterns, local events, and economic indicators to generate highly accurate demand forecasts.\n\nThe platform includes a real-time dashboard for inventory managers, automated reorder triggers, and an anomaly detection system that flags unusual demand patterns for human review.",
+        "technologies": ["Python", "TensorFlow", "FastAPI", "PostgreSQL", "Redis", "Docker", "AWS SageMaker", "React", "D3.js"],
+        "timeline": "6 months",
+        "challenge": "The core challenge was building a prediction model that could account for extreme demand variability across 200+ locations with different customer demographics, regional preferences, and seasonal patterns. The client also needed the system to handle their catalog of 45,000+ SKUs and generate forecasts daily without impacting their existing IT infrastructure. Data quality was inconsistent across stores, with some locations having only 8 months of digital sales records.",
+        "solution": "We developed an ensemble ML model combining gradient boosting, LSTM neural networks, and seasonal decomposition to capture both short-term and long-term demand patterns. For stores with limited historical data, we implemented a transfer learning approach that leveraged patterns from similar store profiles. The system was deployed on AWS SageMaker with auto-scaling to handle daily batch predictions for all SKU-location combinations. A Redis caching layer ensured that dashboard queries returned results in under 200ms.",
+        "results": "- 34% reduction in overstock inventory\n- 51% reduction in stockout incidents\n- $4.8M annual savings in inventory carrying costs\n- 92% forecast accuracy at the SKU-store level\n- ROI achieved within 4 months of deployment",
+        "created_at": "2026-01-10T11:00:00Z",
+        "updated_at": "2026-01-18T10:00:00Z"
+    },
+    {
+        "id": 3,
+        "title": "Cross-Platform Healthcare Appointment App",
+        "client": "MedConnect",
+        "category": "Mobile",
+        "project_image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800",
+        "short_description": "React Native mobile application connecting patients with healthcare providers, featuring real-time scheduling, telemedicine integration, and health record management.",
+        "detailed_description": "MedConnect, a healthcare technology startup, needed a mobile application that would simplify the patient-provider connection across urban and rural areas. The app needed to work seamlessly on both iOS and Android while handling sensitive health data in compliance with Indian healthcare regulations.\n\nFingertip designed and developed a cross-platform mobile application using React Native that serves both patients and healthcare providers. The app features real-time appointment scheduling, integrated telemedicine with video consultations, digital health record management, prescription tracking, and a provider rating system.\n\nThe backend was built with Node.js and Express, using MongoDB for flexible health record storage and WebSocket connections for real-time appointment updates and chat functionality.",
+        "technologies": ["React Native", "Node.js", "Express", "MongoDB", "WebSocket", "AWS", "Twilio", "Stripe", "Firebase"],
+        "timeline": "5 months",
+        "challenge": "Building a healthcare app that works reliably across a wide range of Android devices (including low-end smartphones common in rural areas) while maintaining strict data security standards was the primary challenge. The telemedicine feature needed to deliver stable video consultations even on slower 3G connections. Additionally, the app needed an offline-first architecture since many rural clinics have intermittent internet connectivity.",
+        "solution": "We used React Native with careful performance optimization and device-specific rendering to ensure smooth operation on devices with as little as 2GB RAM. The telemedicine module uses adaptive bitrate streaming that automatically adjusts video quality based on connection speed, with a fallback to audio-only mode. We implemented an offline-first architecture using WatermelonDB for local data storage, with background sync when connectivity is restored. End-to-end encryption protects all health data in transit and at rest.",
+        "results": "- 150,000+ downloads in the first 3 months\n- 4.7 star rating on both App Store and Google Play\n- 89% appointment completion rate (vs. 62% industry average)\n- Successfully facilitated 50,000+ telemedicine consultations\n- Expanded to cover 340 healthcare providers across 8 states",
+        "created_at": "2025-12-15T08:00:00Z",
+        "updated_at": "2026-01-05T12:00:00Z"
+    }
+]

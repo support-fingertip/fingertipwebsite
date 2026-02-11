@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Solutions - Fingertip | Beyond Solutions</title>
+    <meta name="description" content="Fingertip delivers Salesforce, web/mobile, and AI solutions for manufacturing companies -- supply chain optimization, predictive maintenance, and ERP integration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .industry-hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0}
+        .industry-hero img{width:100%;height:400px;object-fit:cover;border-radius:16px}
+        .challenges-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+        .challenge-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0}
+        .challenge-card h4{font-size:18px;font-weight:700;color:#0C2340;margin-bottom:8px}
+        .challenge-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+        .solution-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0;text-align:center;transition:transform 0.3s,box-shadow 0.3s}
+        .solution-card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,0.1)}
+        .solution-card .sol-icon{width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff}
+        .solution-card h4{font-family:var(--font-primary);font-size:20px;font-weight:700;color:#0C2340;margin-bottom:10px}
+        .solution-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solution-card ul{text-align:left;margin-top:16px}
+        .solution-card ul li{font-size:13px;color:#475569;padding:6px 0;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:8px}
+        .solution-card ul li svg{color:#00C9A7;flex-shrink:0}
+        @media(max-width:992px){.industry-hero{grid-template-columns:1fr}.solutions-grid{grid-template-columns:1fr}.challenges-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu"><div class="mega-menu-inner">
+                        <div class="mega-col"><h4 class="mega-heading">Salesforce</h4><ul><li><a href="../services/salesforce.html">Overview</a></li><li><a href="../services/salesforce-implementation.html">Implementation</a></li><li><a href="../services/salesforce-support.html">Support</a></li><li><a href="../services/salesforce-consulting.html">Consulting</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">Web & Mobile</h4><ul><li><a href="../services/web-mobile.html">Overview</a></li><li><a href="../services/web-development.html">Web Apps</a></li><li><a href="../services/mobile-development.html">Mobile</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">AI & ML</h4><ul><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div>
+                    </div></div>
+                </div>
+                <a href="../solutions.html" class="nav-link">Solutions</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="../industries.html" class="nav-link active">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <a href="../industries.html">Industries</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Manufacturing</span>
+            </div>
+            <h1>Manufacturing <span class="gradient-text-light">Solutions</span></h1>
+            <p>Intelligent technology for supply chain optimization, predictive maintenance, and smart manufacturing.</p>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="industry-hero" data-animate="fade-up">
+                <div><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80" alt="Manufacturing Technology" loading="lazy"></div>
+                <div>
+                    <span class="section-tag">Industry Focus</span>
+                    <h2 class="section-title">Smart <span class="gradient-text">Manufacturing</span></h2>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);margin-bottom:24px;">Manufacturers face increasing pressure to reduce costs, improve quality, and accelerate time-to-market while navigating supply chain volatility. Fingertip helps manufacturing companies embrace Industry 4.0 with integrated Salesforce CRM, IoT-connected platforms, and AI-powered analytics that transform operations from the plant floor to the customer.</p>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);">We connect your ERP, CRM, and operational systems into a unified digital ecosystem that drives efficiency, visibility, and informed decision-making across the entire value chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Pain Points</span><h2 class="section-title">Industry <span class="gradient-text">Challenges</span></h2><p class="section-subtitle">Manufacturing companies face operational and technology challenges demanding modern solutions.</p></div>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-animate="fade-up" data-delay="0"><h4>Supply Chain Volatility</h4><p>Global disruptions, raw material shortages, and logistics delays require real-time visibility and agile planning capabilities that legacy systems cannot provide.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="100"><h4>Equipment Downtime</h4><p>Unplanned machine failures cost manufacturers millions annually. Reactive maintenance strategies are insufficient for modern production demands.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="200"><h4>Quality Control</h4><p>Maintaining consistent product quality while scaling production requires real-time monitoring, automated inspection, and root cause analysis capabilities.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="300"><h4>ERP-CRM Disconnect</h4><p>Sales, operations, and finance teams work in siloed systems, creating blind spots in demand forecasting, order management, and customer service.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="400"><h4>Workforce Optimization</h4><p>Skilled labor shortages and an aging workforce demand digital tools for training, knowledge capture, and operational efficiency on the factory floor.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="500"><h4>Sustainability & Compliance</h4><p>Growing regulatory requirements around emissions, waste reduction, and ESG reporting demand comprehensive tracking and reporting capabilities.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">How We Help</span><h2 class="section-title">Our <span class="gradient-text">Solutions</span></h2><p class="section-subtitle">Integrated manufacturing technology solutions that connect the factory floor to the front office.</p></div>
+            <div class="solutions-grid">
+                <div class="solution-card" data-animate="fade-up" data-delay="0">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#1A7AF8,#1459C5);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h4>Salesforce Manufacturing Cloud</h4>
+                    <p>Unified CRM connecting sales forecasts with production planning and customer service.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Manufacturing Cloud</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>ERP Integration (SAP, Oracle)</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Demand Forecasting</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Partner & Dealer Portals</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="100">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#00C9A7,#00A88A);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h4>IoT & Operations Platforms</h4>
+                    <p>Web and mobile platforms that connect sensors, machines, and teams in real time.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>IoT Dashboards</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile Field Service</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Inventory Management</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Supply Chain Tracking</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="200">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#7C4DFF,#5E35B1);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>AI Predictive Analytics</h4>
+                    <p>Machine learning for predictive maintenance, quality control, and demand planning.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Predictive Maintenance</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Visual Quality Inspection</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Demand Forecasting</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Energy Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Results</span><h2 class="section-title">Proven <span class="gradient-text">Impact</span></h2></div>
+            <div class="stats-row" data-animate="fade-up" data-delay="100">
+                <div class="stat-card"><div class="stat-number" data-count="30">0</div><span class="stat-suffix">%</span><div class="stat-label">Reduction in unplanned downtime</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="22">0</div><span class="stat-suffix">%</span><div class="stat-label">Improvement in OEE</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="45">0</div><span class="stat-suffix">%</span><div class="stat-label">Faster order-to-delivery cycle</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="18">0</div><span class="stat-suffix">%</span><div class="stat-label">Decrease in scrap and waste</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Case Study</span><h2 class="section-title">Manufacturing <span class="gradient-text">Success Story</span></h2></div>
+            <div class="video-grid" data-animate="fade-up" data-delay="100">
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Manufacturing Predictive Maintenance" frameborder="0" allowfullscreen></iframe></div><h4>Predictive Maintenance Saves $2M Annually</h4></div>
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Supply Chain Optimization" frameborder="0" allowfullscreen></iframe></div><h4>Supply Chain Visibility Transformation</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-bg"><img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1400&q=80" alt="Manufacturing facility" class="cta-bg-image" loading="lazy"><div class="cta-overlay"></div></div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Modernize Your <span class="gradient-text-light">Manufacturing Operations?</span></h2>
+            <p>Partner with Fingertip to build connected, intelligent manufacturing systems.</p>
+            <div class="cta-actions"><a href="../contact.html" class="btn btn-white btn-lg"><span>Schedule a Consultation</span></a></div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a><p class="footer-description">Beyond Solutions — Your trusted technology partner.</p></div><div class="footer-links-col"><h4>Services</h4><ul><li><a href="../services/salesforce.html">Salesforce</a></li><li><a href="../services/web-mobile.html">Web & Mobile</a></li><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div><div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div><div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div></div></footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

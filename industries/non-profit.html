@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Profit Solutions - Fingertip | Beyond Solutions</title>
+    <meta name="description" content="Fingertip delivers Salesforce Non-Profit Cloud, web/mobile platforms, and AI tools for NGOs, foundations, and charitable organizations to maximize impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .industry-hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0}
+        .industry-hero img{width:100%;height:400px;object-fit:cover;border-radius:16px}
+        .challenges-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+        .challenge-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0}
+        .challenge-card h4{font-size:18px;font-weight:700;color:#0C2340;margin-bottom:8px}
+        .challenge-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+        .solution-card{padding:32px;border-radius:16px;background:white;border:1px solid #e2e8f0;text-align:center;transition:transform 0.3s,box-shadow 0.3s}
+        .solution-card:hover{transform:translateY(-6px);box-shadow:0 15px 40px rgba(0,0,0,0.1)}
+        .solution-card .sol-icon{width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff}
+        .solution-card h4{font-family:var(--font-primary);font-size:20px;font-weight:700;color:#0C2340;margin-bottom:10px}
+        .solution-card p{font-size:14px;color:#64748B;line-height:1.6}
+        .solution-card ul{text-align:left;margin-top:16px}
+        .solution-card ul li{font-size:13px;color:#475569;padding:6px 0;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:8px}
+        .solution-card ul li svg{color:#00C9A7;flex-shrink:0}
+        @media(max-width:992px){.industry-hero{grid-template-columns:1fr}.solutions-grid{grid-template-columns:1fr}.challenges-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu"><div class="mega-menu-inner">
+                        <div class="mega-col"><h4 class="mega-heading">Salesforce</h4><ul><li><a href="../services/salesforce.html">Overview</a></li><li><a href="../services/salesforce-implementation.html">Implementation</a></li><li><a href="../services/salesforce-support.html">Support</a></li><li><a href="../services/salesforce-consulting.html">Consulting</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">Web & Mobile</h4><ul><li><a href="../services/web-mobile.html">Overview</a></li><li><a href="../services/web-development.html">Web Apps</a></li><li><a href="../services/mobile-development.html">Mobile</a></li></ul></div>
+                        <div class="mega-col"><h4 class="mega-heading">AI & ML</h4><ul><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div>
+                    </div></div>
+                </div>
+                <a href="../solutions.html" class="nav-link">Solutions</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="../industries.html" class="nav-link active">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <a href="../industries.html">Industries</a><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Non-Profit</span>
+            </div>
+            <h1>Non-Profit <span class="gradient-text-light">Solutions</span></h1>
+            <p>Technology for NGOs, foundations, and charitable organizations to amplify their mission and maximize impact.</p>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="industry-hero" data-animate="fade-up">
+                <div><img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=700&q=80" alt="Non-Profit Technology" loading="lazy"></div>
+                <div>
+                    <span class="section-tag">Industry Focus</span>
+                    <h2 class="section-title">Amplifying <span class="gradient-text">Social Impact</span></h2>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);margin-bottom:24px;">Non-profit organizations need to do more with less. Every dollar spent on technology should directly contribute to advancing your mission. Fingertip partners with NGOs, foundations, and charitable organizations to implement cost-effective, high-impact technology solutions that streamline fundraising, engage supporters, and demonstrate measurable outcomes.</p>
+                    <p style="font-size:17px;line-height:1.8;color:var(--gray-600);">We leverage Salesforce Non-Profit Cloud (with discounted licensing), custom donor portals, and AI-powered donor analytics to help organizations scale their impact and build sustainable growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Pain Points</span><h2 class="section-title">Industry <span class="gradient-text">Challenges</span></h2><p class="section-subtitle">Non-profits face resource constraints and operational hurdles unique to the social sector.</p></div>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-animate="fade-up" data-delay="0"><h4>Donor Acquisition & Retention</h4><p>Attracting new donors and maintaining relationships with existing supporters requires sophisticated engagement strategies that small teams struggle to execute manually.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="100"><h4>Fundraising Efficiency</h4><p>Campaign management across events, grants, online giving, and major gifts is fragmented, making it difficult to optimize fundraising ROI and hit revenue targets.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="200"><h4>Impact Measurement</h4><p>Funders and stakeholders demand clear evidence of outcomes. Tracking and reporting program impact across multiple initiatives is complex and time-consuming.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="300"><h4>Volunteer Coordination</h4><p>Recruiting, scheduling, and communicating with volunteers across programs, events, and locations requires tools that most non-profits lack or underutilize.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="400"><h4>Limited IT Resources</h4><p>Most non-profits cannot afford dedicated IT staff. Technology must be easy to maintain, well-documented, and designed for non-technical users.</p></div>
+                <div class="challenge-card" data-animate="fade-up" data-delay="500"><h4>Grant Management</h4><p>Tracking grant applications, compliance requirements, reporting deadlines, and fund allocation across multiple grants is a significant administrative burden.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">How We Help</span><h2 class="section-title">Our <span class="gradient-text">Solutions</span></h2><p class="section-subtitle">Purpose-built non-profit technology solutions that maximize every dollar of your mission budget.</p></div>
+            <div class="solutions-grid">
+                <div class="solution-card" data-animate="fade-up" data-delay="0">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#1A7AF8,#1459C5);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>Salesforce Non-Profit Cloud</h4>
+                    <p>Donor management, fundraising, and program tracking on the world's leading CRM.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>NPSP Implementation</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Donor Management</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Grant Tracking</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Volunteer Management</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="100">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#00C9A7,#00A88A);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h4>Fundraising & Donor Portals</h4>
+                    <p>Custom web and mobile platforms that make giving easy and transparent.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Online Giving Platforms</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Event Registration</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Donor Self-Service Portals</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Impact Dashboards</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-animate="fade-up" data-delay="200">
+                    <div class="sol-icon" style="background:linear-gradient(135deg,#7C4DFF,#5E35B1);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke="currentColor" stroke-width="2"/></svg></div>
+                    <h4>AI for Social Impact</h4>
+                    <p>Intelligent tools that optimize fundraising, predict donor behavior, and measure program impact.</p>
+                    <ul>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Donor Propensity Scoring</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Campaign Optimization</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Impact Reporting AI</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Sentiment Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--gray-50);">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Results</span><h2 class="section-title">Proven <span class="gradient-text">Impact</span></h2></div>
+            <div class="stats-row" data-animate="fade-up" data-delay="100">
+                <div class="stat-card"><div class="stat-number" data-count="45">0</div><span class="stat-suffix">%</span><div class="stat-label">Increase in donation revenue</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="60">0</div><span class="stat-suffix">%</span><div class="stat-label">Improvement in donor retention</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="70">0</div><span class="stat-suffix">%</span><div class="stat-label">Reduction in admin overhead</div></div>
+                <div class="stat-card"><div class="stat-number" data-count="3">0</div><span class="stat-suffix">x</span><div class="stat-label">Faster grant reporting</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:100px 0;">
+        <div class="container">
+            <div class="section-header center" data-animate="fade-up"><span class="section-tag">Case Study</span><h2 class="section-title">Non-Profit <span class="gradient-text">Success Story</span></h2></div>
+            <div class="video-grid" data-animate="fade-up" data-delay="100">
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Non-Profit Digital Transformation" frameborder="0" allowfullscreen></iframe></div><h4>Foundation Doubles Fundraising with Salesforce</h4></div>
+                <div class="video-card"><div class="video-container"><iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="NGO Impact Platform" frameborder="0" allowfullscreen></iframe></div><h4>NGO Impact Reporting Platform Launch</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-bg"><img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1400&q=80" alt="Community impact" class="cta-bg-image" loading="lazy"><div class="cta-overlay"></div></div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Amplify Your <span class="gradient-text-light">Social Impact?</span></h2>
+            <p>Partner with Fingertip to build technology that empowers your mission and maximizes every donor dollar.</p>
+            <div class="cta-actions"><a href="../contact.html" class="btn btn-white btn-lg"><span>Schedule a Consultation</span></a></div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a><p class="footer-description">Beyond Solutions — Your trusted technology partner.</p></div><div class="footer-links-col"><h4>Services</h4><ul><li><a href="../services/salesforce.html">Salesforce</a></li><li><a href="../services/web-mobile.html">Web & Mobile</a></li><li><a href="../services/ai-ml.html">AI & ML</a></li></ul></div><div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div><div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div></div></footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>
