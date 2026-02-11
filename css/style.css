@@ -540,6 +540,12 @@ input, textarea, select {
     flex-direction: column;
 }
 
+.hero-stat-value {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
 .stat-number {
     font-family: var(--font-primary);
     font-size: 32px;
@@ -3229,7 +3235,6 @@ input, textarea, select {
     border-radius: var(--radius-lg);
     overflow: hidden;
     height: 360px;
-    cursor: pointer;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -3256,7 +3261,18 @@ input, textarea, select {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 32px;
+    padding: 28px;
+    overflow: hidden;
+}
+
+.service-deep-overlay h3 a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.service-deep-overlay h3 a:hover {
+    color: var(--blue-light);
 }
 
 .service-deep-tag {
@@ -3271,18 +3287,22 @@ input, textarea, select {
 
 .service-deep-overlay h3 {
     font-family: var(--font-primary);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     color: var(--white);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     line-height: 1.3;
 }
 
 .service-deep-overlay p {
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(255,255,255,0.7);
     line-height: 1.6;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .service-deep-link {
