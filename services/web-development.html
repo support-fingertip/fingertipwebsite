@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Development - Fingertip</title>
+    <meta name="description" content="Fingertip builds custom web applications including SaaS platforms, e-commerce solutions, enterprise portals, dashboards, APIs, and progressive web apps using modern frameworks and cloud-native architectures.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-col">
+                                <h4 class="mega-heading">Salesforce</h4>
+                                <ul>
+                                    <li><a href="salesforce.html">Overview</a></li>
+                                    <li><a href="salesforce-implementation.html">Implementation</a></li>
+                                    <li><a href="salesforce-support.html">Support</a></li>
+                                    <li><a href="salesforce-consulting.html">Consulting</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4 class="mega-heading">Web & Mobile</h4>
+                                <ul>
+                                    <li><a href="web-mobile.html">Overview</a></li>
+                                    <li><a href="web-development.html">Web Development</a></li>
+                                    <li><a href="mobile-development.html">Mobile Development</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h4 class="mega-heading">AI & ML</h4>
+                                <ul>
+                                    <li><a href="ai-ml.html">AI & ML Solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../industries.html" class="nav-link">Industries</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="../contact.html" class="nav-cta">Get Started</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE BANNER ========== -->
+    <section class="hero" style="min-height: 400px; padding: 160px 0 80px;">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="container" style="position: relative; z-index: 1; text-align: center;">
+            <div class="hero-badge" data-animate="fade-up" style="justify-content: center; margin: 0 auto 24px;">
+                <span class="badge-dot"></span>
+                Modern Web Solutions
+            </div>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100" style="font-size: clamp(36px, 5vw, 56px);">Web Application Development</h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200" style="margin: 0 auto;">
+                <a href="../index.html" style="color: rgba(255,255,255,0.6);">Home</a>
+                <span style="color: rgba(255,255,255,0.4); margin: 0 8px;">/</span>
+                <span style="color: rgba(255,255,255,0.6);">Services</span>
+                <span style="color: rgba(255,255,255,0.4); margin: 0 8px;">/</span>
+                <a href="web-mobile.html" style="color: rgba(255,255,255,0.6);">Web & Mobile</a>
+                <span style="color: rgba(255,255,255,0.4); margin: 0 8px;">/</span>
+                <span style="color: var(--blue);">Web Development</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== SERVICE DETAIL LAYOUT ========== -->
+    <section style="padding: 100px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 380px; gap: 60px; align-items: start;">
+                <!-- Main Content -->
+                <div>
+                    <div data-animate="fade-up">
+                        <span class="section-tag">Web Development</span>
+                        <h2 class="section-title">Custom Web Applications <span class="gradient-text">Built to Scale</span></h2>
+                        <p style="font-size: 17px; line-height: 1.8; color: var(--gray-600); margin-bottom: 24px;">
+                            From complex SaaS platforms and high-traffic e-commerce stores to enterprise portals, real-time dashboards, RESTful APIs, and progressive web apps, Fingertip's web development team builds applications that perform under pressure, scale effortlessly, and delight users.
+                        </p>
+                        <p style="font-size: 17px; line-height: 1.8; color: var(--gray-600); margin-bottom: 48px;">
+                            We leverage modern architectures including microservices, serverless, and JAMstack alongside frameworks like React, Angular, Vue, Next.js, and Node.js to deliver applications that are fast, secure, accessible, and maintainable. Every project follows our proven methodology to minimize risk and maximize quality.
+                        </p>
+                    </div>
+
+                    <!-- Feature Checklist -->
+                    <div data-animate="fade-up" data-delay="100">
+                        <h3 style="font-family: var(--font-primary); font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 32px;">What We Deliver</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">Custom SaaS Platforms</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">E-Commerce Solutions</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">Enterprise Portals & Intranets</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">Real-Time Dashboards & Analytics</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">RESTful & GraphQL APIs</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">Progressive Web Apps (PWAs)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">CI/CD & DevOps Pipelines</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--gray-50); border-radius: var(--radius-sm);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0; color: var(--teal);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <span style="font-size: 14px; font-weight: 600; color: var(--navy);">Cloud-Native Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development Process Timeline -->
+                    <div data-animate="fade-up" data-delay="200" style="margin-top: 60px;">
+                        <h3 style="font-family: var(--font-primary); font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 40px;">Our Development Process</h3>
+                        <div class="process-timeline">
+                            <div class="process-line"></div>
+                            <div class="process-step">
+                                <div class="process-dot"><span>1</span></div>
+                                <div class="process-content">
+                                    <h4>Discovery & Planning</h4>
+                                    <p>We start by understanding your business goals, target users, and technical requirements. Through workshops and research, we define the product vision, feature roadmap, and technical architecture.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-dot"><span>2</span></div>
+                                <div class="process-content">
+                                    <h4>UI/UX Design</h4>
+                                    <p>Our designers create user flows, wireframes, and high-fidelity prototypes. We validate designs with real users and iterate until the experience is intuitive, accessible, and aligned with your brand.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-dot"><span>3</span></div>
+                                <div class="process-content">
+                                    <h4>Agile Development</h4>
+                                    <p>We build in 2-week sprints with regular demos and feedback cycles. Front-end and back-end teams work in parallel, delivering functional increments that you can test and validate continuously.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-dot"><span>4</span></div>
+                                <div class="process-content">
+                                    <h4>Quality Assurance</h4>
+                                    <p>Comprehensive testing including automated unit tests, integration tests, cross-browser testing, performance testing, security audits, and accessibility compliance checks (WCAG 2.1).</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-dot"><span>5</span></div>
+                                <div class="process-content">
+                                    <h4>Deployment & Launch</h4>
+                                    <p>We deploy using CI/CD pipelines to cloud infrastructure with zero-downtime strategies. Load testing, monitoring setup, and launch checklists ensure a smooth, confident go-live.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="process-dot"><span>6</span></div>
+                                <div class="process-content">
+                                    <h4>Maintenance & Growth</h4>
+                                    <p>Post-launch, we provide ongoing support, performance monitoring, feature enhancements, and scaling optimizations. Your application evolves as your business grows.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Embed -->
+                    <div data-animate="fade-up" data-delay="100" style="margin-top: 60px;">
+                        <h3 style="font-family: var(--font-primary); font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 24px;">See Our Work</h3>
+                        <div class="video-card">
+                            <div class="video-container">
+                                <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Web Development Process at Fingertip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside style="position: sticky; top: 100px;">
+                    <div data-animate="fade-left" style="background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 28px;">
+                        <h4 style="font-family: var(--font-primary); font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 24px;">Related Services</h4>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <a href="web-mobile.html" style="display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--gray-50); border-radius: var(--radius-md); transition: var(--transition);">
+                                <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(0,161,224,0.1); color: var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <strong style="display: block; font-size: 14px; font-weight: 600; color: var(--navy);">Web & Mobile Overview</strong>
+                                    <span style="font-size: 13px; color: var(--gray-400);">All development services</span>
+                                </div>
+                            </a>
+                            <a href="mobile-development.html" style="display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--gray-50); border-radius: var(--radius-md); transition: var(--transition);">
+                                <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(28,181,172,0.1); color: var(--teal); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                </div>
+                                <div>
+                                    <strong style="display: block; font-size: 14px; font-weight: 600; color: var(--navy);">Mobile Development</strong>
+                                    <span style="font-size: 13px; color: var(--gray-400);">iOS, Android & cross-platform</span>
+                                </div>
+                            </a>
+                            <a href="ai-ml.html" style="display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--gray-50); border-radius: var(--radius-md); transition: var(--transition);">
+                                <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(155,89,182,0.1); color: var(--purple); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0112 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <strong style="display: block; font-size: 14px; font-weight: 600; color: var(--navy);">AI & ML Solutions</strong>
+                                    <span style="font-size: 13px; color: var(--gray-400);">Intelligent applications</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div data-animate="fade-left" data-delay="100" style="background: var(--gradient-hero); border-radius: var(--radius-lg); padding: 36px 32px; text-align: center;">
+                        <div style="width: 64px; height: 64px; margin: 0 auto 20px; background: rgba(0,161,224,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="color: var(--blue);"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h4 style="font-family: var(--font-primary); font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 12px;">Start Your Web Project</h4>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 24px;">Have an idea for a web application? Let's turn it into reality together.</p>
+                        <a href="../contact.html" class="btn btn-primary btn-full">
+                            <span>Contact Us Today</span>
+                            <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80" alt="Office" class="cta-bg-image">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-container" data-animate="fade-up">
+            <h2>Ready to Get <span class="gradient-text-light">Started?</span></h2>
+            <p>Let's discuss how Fingertip can help with your project.</p>
+            <div class="cta-actions">
+                <a href="../contact.html" class="btn btn-white btn-lg"><span>Contact Us</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo footer-logo"><img src="../images/logo.png" alt="Fingertip" class="logo-img"></a>
+                    <p class="footer-description">Beyond Solutions — Your trusted technology partner.</p>
+                </div>
+                <div class="footer-links-col"><h4>Services</h4><ul><li><a href="salesforce.html">Salesforce</a></li><li><a href="web-mobile.html">Web & Mobile</a></li><li><a href="ai-ml.html">AI & ML</a></li></ul></div>
+                <div class="footer-links-col"><h4>Company</h4><ul><li><a href="../about.html">About</a></li><li><a href="../industries.html">Industries</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+                <div class="footer-links-col"><h4>Connect</h4><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter</a></li><li><a href="#">YouTube</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Fingertip. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Terms</a><a href="#">Privacy</a></div></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
