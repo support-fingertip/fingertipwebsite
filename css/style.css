@@ -72,6 +72,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: var(--gray-700);
+    overflow-x: hidden;
     background: var(--white);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -427,7 +428,6 @@ input, textarea, select {
     display: flex;
     align-items: center;
     overflow: hidden;
-    overflow-x: clip;
     padding: 120px 0 80px;
 }
 
@@ -462,9 +462,13 @@ input, textarea, select {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
     align-items: center;
+}
+
+.hero-content {
+    min-width: 0;
 }
 
 .hero-badge {
@@ -489,6 +493,7 @@ input, textarea, select {
     border-radius: 50%;
     animation: pulse-dot 2s ease-in-out infinite;
     will-change: opacity;
+    flex-shrink: 0;
 }
 
 @keyframes pulse-dot {
@@ -498,19 +503,21 @@ input, textarea, select {
 
 .hero-title {
     font-family: var(--font-primary);
-    font-size: clamp(40px, 5.5vw, 64px);
+    font-size: clamp(36px, 4vw, 58px);
     font-weight: 900;
-    line-height: 1.1;
+    line-height: 1.15;
     color: var(--white);
     margin-bottom: 24px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.8;
     color: rgba(255,255,255,0.65);
-    max-width: 540px;
+    max-width: 520px;
     margin-bottom: 36px;
 }
 
@@ -518,13 +525,14 @@ input, textarea, select {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
 }
 
 .hero-stats {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 28px;
+    flex-wrap: wrap;
 }
 
 .hero-stat {
@@ -534,7 +542,7 @@ input, textarea, select {
 
 .stat-number {
     font-family: var(--font-primary);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
     color: var(--white);
     line-height: 1;
@@ -542,27 +550,29 @@ input, textarea, select {
 
 .stat-suffix {
     font-family: var(--font-primary);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
-    color: var(--blue);
+    color: var(--blue-light);
     line-height: 1;
 }
 
 .stat-label {
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(255,255,255,0.5);
     margin-top: 6px;
 }
 
 .hero-stat-divider {
     width: 1px;
-    height: 48px;
+    height: 40px;
     background: rgba(255,255,255,0.15);
 }
 
 /* Hero Visual */
 .hero-visual {
     position: relative;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .hero-image-wrapper {
@@ -573,10 +583,11 @@ input, textarea, select {
 
 .hero-image {
     width: 100%;
-    height: 500px;
+    height: auto;
+    max-height: 480px;
     object-fit: cover;
     border-radius: var(--radius-xl);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    display: block;
 }
 
 .hero-image-overlay {
@@ -1743,6 +1754,23 @@ input, textarea, select {
 
 /* Large Screens */
 @media (max-width: 1200px) {
+    .hero-container {
+        grid-template-columns: 1fr 0.75fr;
+        gap: 32px;
+    }
+
+    .hero-title {
+        font-size: clamp(32px, 3.5vw, 48px);
+    }
+
+    .hero-image {
+        max-height: 380px;
+    }
+
+    .hero-floating-card {
+        display: none;
+    }
+
     .industries-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1838,12 +1866,22 @@ input, textarea, select {
 /* Mobile */
 @media (max-width: 768px) {
     .hero {
-        padding: 100px 0 60px;
+        padding: 100px 0 50px;
         min-height: auto;
     }
 
     .hero-title {
-        font-size: 36px;
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-badge {
+        font-size: 11px;
+        padding: 6px 14px 6px 10px;
     }
 
     .hero-stats {
@@ -3034,14 +3072,20 @@ input, textarea, select {
 /* ============================================================
    TYPING CURSOR EFFECT
    ============================================================ */
+.typing-text {
+    display: inline;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
 .typing-cursor {
-    border-right: 3px solid var(--blue);
+    border-right: 3px solid var(--blue-light);
     animation: blink-cursor 0.75s step-end infinite;
 }
 
 @keyframes blink-cursor {
     from, to { border-color: transparent; }
-    50% { border-color: var(--blue); }
+    50% { border-color: var(--blue-light); }
 }
 
 /* ============================================================
